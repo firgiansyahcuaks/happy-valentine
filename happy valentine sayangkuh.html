@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aku Sayang Nurfa</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffcccb;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #d63384;
+            animation: pulse 1.5s infinite;
+        }
+        img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        p {
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .hidden-message {
+            display: none;
+            font-size: 2rem;
+            color: #d63384;
+            margin-top: 20px;
+        }
+        .letter-container {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+    </style>
+    <script>
+        function openLetter() {
+            document.getElementById("letter").style.display = "flex";
+        }
+    </script>
+</head>
+<body>
+    <h1>Aku Sayang Nurfa ❤️</h1>
+    <p>Kamu adalah orang yang hebat di dunia!</p>
+    <div class="image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Coraz%C3%B3n.svg/1200px-Coraz%C3%B3n.svg.png" alt="Love">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/House_%28yellow_simple%29.png" alt="Rumah">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Smiley.svg/1024px-Smiley.svg.png" alt="Smiley">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Sun_icon.svg/1024px-Sun_icon.svg.png" alt="Matahari">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cute_star.png" alt="Bintang">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Envelope_font_awesome.svg/1200px-Envelope_font_awesome.svg.png" alt="Kotak Surat" onclick="openLetter()">
+    </div>
+    <div id="letter" class="letter-container">
+        <h2>Happy Valentine Sayangku! ❤️</h2>
+        <p>Semoga hari ini penuh cinta dan kebahagiaan untukmu! 💕</p>
+    </div>
+</body>
+</html>
